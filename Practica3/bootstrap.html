@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario Registro</title>
+
+    <link rel="stylesheet" href="bootstrapStyles.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+    
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2">
+            <ul class="nav flex-column">
+                <li class="nav-link active show" aria-selected="true">Producto</a></li>
+                <li class="nav-link" aria-selected="false">Compra</a></li>
+                <li class="nav-link" aria-selected="false">Proveedor</a></li>
+                <li class="nav-link" aria-selected="false">Venta</a></li>
+                <li class="nav-link" aria-selected="false">Clientes</a></li>
+                <li class="nav-link" aria-selected="false">Búsqueda</a></li>
+                <li class="nav-link" aria-selected="false">Reportes</a></li>
+            </ul>
+          </div>
+
+            <div class="col-lg-10">
+                <div class="tab-content">
+
+                    <div class="card">
+                        <div class="card-header">
+                          Detalles del Producto
+                        </div>
+                        <div class="card-body">
+                        
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#detalles_producto">Producto</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Subir archivos</a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div id="detalles_producto" class="container-fluid tab-pane active show">
+                                    <br>
+                                    <div id="itemDetails">
+
+                                        <form>
+
+                                            <div class="row">
+                                                <div class="form-group col-md-3" style="display:inline-block;">
+                                                    <label> N producto <span class="requiredIcon">*</span> </label>
+                                                    <input type="text" class="form-control" autocomplete="off">
+                                                    <div id="itemDetailsItemNumberSuggestionDiv" class="customListDivWidth"></div>
+                                                </div>
+
+                                                <div class="form-group col-md-3">
+                                                    <label> ID producto </label>
+                                                    <input type="number" class="form-control" autocomplete="off" title-data-original-title="ID generado automaticamente" readonly> 
+                                                    <div id="itemDetailsItemNumberSuggestionDiv" class="customListDivWidth"></div>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label> Nombre de producto <span class="requiredIcon">*</span> </label>
+                                                    <input type="text" class="form-control" id="itemDetailsItemName" autocomplete="off">
+                                                    <div id="itemDetailsItemNumberSuggestionDiv" class="customListDivWidth"></div>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <label> Estado </label>
+                                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Select Option">
+                                                    <datalist id="datalistOptions">
+                                                        <option value="Activo">
+                                                        <option value="Inactivo">
+                                                    </datalist>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+                                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="row">
+                                                <div class="form-group col-md-3">
+                                                    <label>Descuento %</label>
+                                                    <input type="text" class="form-control" value="0">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Cantidad <span class="requiredIcon">*</span></span> </label>
+                                                    <input type="number" class="form-control" value="0">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Precio unitario <span class="requiredIcon">*</span></span> </label>
+                                                    <input type="number" class="form-control" value="0">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <label>Stock total </label>
+                                                    <input type="number" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <br>
+
+                                            <button type="button" class="btn btn-success">Agregar Producto</button>
+                                            <button type="button" class="btn btn-info">Actualizar</button>
+                                            <button type="button" class="btn btn-danger">Borrar</button>
+                                            <button type="button" class="btn btn-light">Limpiar</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

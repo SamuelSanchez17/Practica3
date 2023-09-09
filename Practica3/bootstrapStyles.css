@@ -1,0 +1,25 @@
+/* Agrega estilo para el elemento activo "Producto" */
+.nav-link.active {
+    background-color: orange;
+    color: white; /* Cambia el color del texto a blanco */
+  }
+
+  .nav-link {
+    border-radius: 0.25rem;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    display: block;
+    padding: 0.5rem 1rem;
+
+  }
+
+  h3
+{
+    text-align: left;
+    font-family: Arial;
+    border: 2px solid #ccd4e0;
+    background-color: rgb(192, 206, 214);
+}
+
+.requiredIcon{
+    color:red
+}
